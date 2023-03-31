@@ -8,9 +8,6 @@ import { useBank } from '../../Hooks/useBank'
 const HomeScreen = () => {
   const { banks, getBanks } = useBank()
 
-  if (!banks.length) console.log('pasa');
-  
-
   useEffect(() => {
     getBanks()
   }, [])
